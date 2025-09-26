@@ -49,14 +49,29 @@ public class ConditionalsExercises {
         // 6. Declara una variable con el día de la semana (1-7) y muestra su nombre con switch.
         int dia = 3;
         switch (dia) {
-            case 1: System.out.println("Lunes"); break;
-            case 2: System.out.println("Martes"); break;
-            case 3: System.out.println("Miércoles"); break;
-            case 4: System.out.println("Jueves"); break;
-            case 5: System.out.println("Viernes"); break;
-            case 6: System.out.println("Sábado"); break;
-            case 7: System.out.println("Domingo"); break;
-            default: System.out.println("Día inválido");
+            case 1: 
+                System.out.println("Lunes"); 
+                break;
+            case 2: 
+                System.out.println("Martes"); 
+                break;
+            case 3: 
+                System.out.println("Miércoles"); 
+                break;
+            case 4: 
+                System.out.println("Jueves"); 
+                break;
+            case 5: 
+                System.out.println("Viernes"); 
+                break;
+            case 6: 
+                System.out.println("Sábado"); 
+                break;
+            case 7: 
+                System.out.println("Domingo"); 
+                break;
+            default: 
+                System.out.println("Día inválido");
         }
 
         // 7. Simula un sistema de notas: muestra "Sobresaliente", "Aprobado" o "Suspenso" según la nota (0-100).
