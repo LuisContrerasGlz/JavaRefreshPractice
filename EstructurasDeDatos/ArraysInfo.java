@@ -1,6 +1,8 @@
 package EstructurasDeDatos;
+import java.util.Arrays;
 
-public class Arrays {
+
+public class ArraysInfo {
     public static void main(String[] args) {
 
         // Declaración y creación
@@ -37,5 +39,39 @@ public class Arrays {
 
         boolean[] booleans = new boolean[5];
         System.out.println(booleans[4]);
+
+        // Si usas directamente:
+
+        int[] numeros = {1, 2, 3, 4, 5};
+        System.out.println(numeros);
+
+        // Eso es la referencia en memoria, no los valores del array. [I@5acf9800
+
+        // Opciones correctas para mostrar arrays:
+
+        // Usar Arrays.toString() (más común)
+
+        int[] numeros2 = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(numeros2));
+        // Resultado: [1, 2, 3, 4, 5]
+
+        // Recorrer el array con un for
+
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("Elemento en posición " + i + ": " + numeros[i]);
+        }
+
+        // Usar un for-each (más limpio)
+
+        for (int n : numeros) {
+            System.out.println(n);
+        }
+
+        // Si es multidimensional: Arrays.deepToString()
+
+        int[][] matriz = {{1,2}, {3,4}, {5,6}};
+            System.out.println(Arrays.deepToString(matriz));
+        // Resultado: [[1, 2], [3, 4], [5, 6]]
+
     }
 }
