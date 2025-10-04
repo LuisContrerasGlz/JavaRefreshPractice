@@ -2,25 +2,15 @@ package ProgramacionOrientadaObjetos;
 
 public class Classes {
     public static void main(String[] args) {
-
-        var person = new Person("Brais", -38, "123456789A");
-
-//        person.name = "Brais";
-//        person.age = 38;
+        Person person = new Person("Luis", 30, "123456789A");
 
         person.sayHello();
 
-        person.name = "Brais Moure";
-        System.out.println(person.name);
+        // Usar setter para cambiar nombre
+        person.setName("Luis Contreras");
+        System.out.println(person.getName());
 
-//        person.id = "123456789A";
-
+        // Usar getter para acceder al id
         System.out.println(person.getId());
-
-        person.setAge(38);
-        System.out.println(person.getAge());
-
-        var person2 = new Person("MoureDev", 18, "123456789B");
-        person2.sayHello();
     }
 }
