@@ -68,9 +68,6 @@ public class FunctionsExercises {
         }
     }
 
-    // ========================
-    // MAIN PARA PROBAR TODO
-    // ========================
     public static void main(String[] args) {
 
         // 1
