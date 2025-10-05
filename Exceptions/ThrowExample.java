@@ -1,4 +1,4 @@
-package Exceptions;
+package exceptions;
 
 public class ThrowExample {
     public void checkAge(int age) throws IllegalArgumentException {

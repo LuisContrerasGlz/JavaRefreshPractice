@@ -1,4 +1,4 @@
-package Exceptions;
+package exceptions;
 
 // Excepción "checked": obliga a declarar throws o a capturarla
 public class CustomException extends Exception {
