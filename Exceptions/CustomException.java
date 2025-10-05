@@ -1,7 +1,9 @@
 package Exceptions;
 
-public class CustomException {
-    public CustomException(String message) {
-        super(message);
-    }
+// Excepción "checked": obliga a declarar throws o a capturarla
+public class CustomException extends Exception {
+    public CustomException() { super(); }
+    public CustomException(String message) { super(message); }
+    public CustomException(String message, Throwable cause) { super(message, cause); }
+    public CustomException(Throwable cause) { super(cause); }
 }
