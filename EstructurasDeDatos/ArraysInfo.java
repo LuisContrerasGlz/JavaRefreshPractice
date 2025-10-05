@@ -1,4 +1,4 @@
-package EstructurasDeDatos;
+package estructurasdedatos;
 import java.util.Arrays;
 
 

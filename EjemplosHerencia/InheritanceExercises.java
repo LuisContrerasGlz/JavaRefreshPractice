@@ -1,4 +1,4 @@
-package EjemplosHerencia;
+package ejemplosherencia;
 
 import java.util.ArrayList;
 

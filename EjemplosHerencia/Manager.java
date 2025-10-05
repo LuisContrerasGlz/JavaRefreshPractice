@@ -1,4 +1,4 @@
-package EjemplosHerencia;
+package ejemplosherencia;
 
 class Manager extends Employee {
     private String department;

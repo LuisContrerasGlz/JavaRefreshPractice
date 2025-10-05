@@ -1,4 +1,4 @@
-package EjemplosHerencia;
+package ejemplosherencia;
 
 class Car extends Vehicle {
     public void honk() {

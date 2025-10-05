@@ -1,4 +1,4 @@
-package EjemplosHerencia;
+package ejemplosherencia;
 
 class Dog extends Animal {
     @Override

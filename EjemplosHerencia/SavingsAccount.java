@@ -1,4 +1,4 @@
-package EjemplosHerencia;
+package ejemplosherencia;
 
 class SavingsAccount extends Account {
     private double interestRate; // ej. 0.05 = 5%
