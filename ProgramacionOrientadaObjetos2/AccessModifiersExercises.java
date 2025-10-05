@@ -3,24 +3,64 @@ package ProgramacionOrientadaObjetos2;
 public class AccessModifiersExercises {
     public static void main(String[] args) {
 
-        // 1. Crea una clase Person con atributos privados name y age. Usa los métodos getName(), setName(), getAge() y setAge() para asignar y mostrar valores desde otra clase.
+        // 1. Person con getters/setters
+        Person p = new Person();
+        p.setName("Luis");
+        p.setAge(25);
+        System.out.println("[1] " + p.getName() + " tiene " + p.getAge() + " años");
 
-        // 2. Crea una clase Product con el atributo privado price. Añade el método setPrice(double price) que solo permita precios mayores a 0.
+        // 2. Product con validación en setPrice
+        Product prod = new Product();
+        prod.setPrice(150.5);
+        System.out.println("[2] Precio del producto: $" + prod.getPrice());
 
-        // 3. Crea una clase BankAccount con el atributo privado balance. Implementa los métodos deposit(double amount) y withdraw(double amount) que validen las cantidades correctamente.
+        // 3. BankAccount con deposit/withdraw
+        BankAccount acc = new BankAccount();
+        acc.deposit(500);
+        acc.withdraw(200);
+        acc.withdraw(1000); // debería fallar
+        System.out.println("[3] Saldo cuenta: $" + acc.getBalance());
 
-        // 4. Crea una clase Book con el atributo privado title. Permite leerlo con el método getTitle() pero no modificarlo (sin setTitle()). El título debe asignarse solo por el constructor.
+        // 4. Book solo con getTitle()
+        Book b = new Book("Clean Code");
+        System.out.println("[4] Libro: " + b.getTitle());
 
-        // 5. Crea una clase Temperature con el atributo privado celsius. El método setCelsius(double celsius) solo debe aceptar valores entre -100 y 100.
+        // 5. Temperature con validación de rango
+        Temperature t = new Temperature();
+        t.setCelsius(30);
+        t.setCelsius(150); // inválido
+        System.out.println("[5] Temperatura: " + t.getCelsius() + "°C");
 
-        // 6. Crea una clase User con los atributos privados username y password. Implementa los métodos setUsername(String username), setPassword(String password) y checkPassword(String inputPassword) que compare contraseñas.
+        // 6. User con checkPassword
+        User u = new User();
+        u.setUsername("admin");
+        u.setPassword("1234");
+        System.out.println("[6] Password correcta? " + u.checkPassword("1234"));
+        System.out.println("    Password incorrecta? " + u.checkPassword("9999"));
 
-        // 7. Crea una clase Employee con el atributo privado salary. Agrega el método raiseSalary(double percent) que solo permita aumentos positivos.
+        // 7. Employee con raiseSalary
+        Employee e = new Employee();
+        e.raiseSalary(10); // +10%
+        e.raiseSalary(-5); // inválido
+        System.out.println("[7] Salario final: $" + e.getSalary());
 
-        // 8. Crea una clase Rectangle con los atributos privados width y height. Agrega setters y el método calculateArea() que devuelva el resultado de width * height.
+        // 8. Rectangle con calculateArea()
+        Rectangle r = new Rectangle();
+        r.setWidth(5);
+        r.setHeight(3);
+        System.out.println("[8] Área rectángulo = " + r.calculateArea());
 
-        // 9. Crea una clase Student con el atributo privado grade. Agrega los métodos setGrade(int grade) y isPassed() que retorne true si la nota es mayor o igual a 60.
+        // 9. Student con grade e isPassed()
+        Student st = new Student();
+        st.setGrade(72);
+        System.out.println("[9] ¿Pasó con " + st.getGrade() + "? " + st.isPassed());
 
-        // 10. Crea una clase Car con el atributo privado speed. Agrega los métodos accelerate(int amount) que aumente la velocidad (máximo 120) y brake(int amount) que reduzca la velocidad (mínimo 0).
+        // 10. Car con accelerate/brake
+        Car c = new Car();
+        c.accelerate(50);
+        c.accelerate(100); // debería limitar en 120
+        c.brake(30);
+        c.brake(200); // debería limitar en 0
+        System.out.println("[10] Velocidad final: " + c.getSpeed() + " km/h");
     }
 }
