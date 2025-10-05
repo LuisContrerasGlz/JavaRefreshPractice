@@ -1,4 +1,4 @@
-package ProgramacionOrientadaObjetos;
+package programacionorientadaobjetos;
 
 import java.util.ArrayList;
 import java.util.List;

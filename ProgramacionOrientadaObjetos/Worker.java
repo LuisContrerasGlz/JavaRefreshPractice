@@ -1,4 +1,4 @@
-package ProgramacionOrientadaObjetos;
+package programacionorientadaobjetos;
 
 public class Worker {
     private String name;

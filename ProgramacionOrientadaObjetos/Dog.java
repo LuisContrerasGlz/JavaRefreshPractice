@@ -1,4 +1,4 @@
-package ProgramacionOrientadaObjetos;
+package programacionorientadaobjetos;
 
 public class Dog {
     private String name;

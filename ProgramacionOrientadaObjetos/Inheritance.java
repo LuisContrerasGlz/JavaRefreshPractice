@@ -1,4 +1,4 @@
-package ProgramacionOrientadaObjetos;
+package programacionorientadaobjetos;
 
 public class Inheritance {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ProgramacionOrientadaObjetos2;
+package programacionorientadaobjetos2;
 
 public class Student {
     private int grade;

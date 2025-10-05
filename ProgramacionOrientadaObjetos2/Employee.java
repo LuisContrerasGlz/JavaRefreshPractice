@@ -1,4 +1,4 @@
-package ProgramacionOrientadaObjetos2;
+package programacionorientadaobjetos2;
 
 public class Employee {
     private double salary = 1000; // salario base
